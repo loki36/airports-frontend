@@ -14,6 +14,10 @@ spec:
     spec:
       containers:
       - name: airports-front
+        resources: 
+          limits:
+            cpu: 300m
+            memory: 200Mi
         image: quay.io/rh_ee_slallema/airports-front:latest
         ports:
         - containerPort: 8080
